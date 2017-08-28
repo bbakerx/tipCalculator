@@ -78,3 +78,7 @@ totalTip {
     display: block;
     text-transform: uppercase;
 }
+
+#totalTip sup {
+
+}
