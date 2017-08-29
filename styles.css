@@ -1,20 +1,21 @@
 /* styles.css */
 body {
-    background: #333 url(img/cutlery.jpg) center center no-repeat;
+    background: #371373 url('img/cheesecake.jpg') center center no-repeat;
     background-size: cover;
-    color: #532827;
+    /*color: #532827;*/
+    color: #371373;
 }
 
 #container {
   width: 400px;
   margin: 40px auto 0;
-  padding 50px;
+  padding: 50px;
   box-sizing: border-box;
   background: url('img/paper-pattern.jpg') top left repeat;
   box-shadow: 0 10px 15px -8px #000;
-  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  border-radius: 5px;
   text-align: center;
 }
 
@@ -46,7 +47,8 @@ form input[type="text"] {
 }
 
 button {
-    background: #6c2726;
+    /*background: #371373;*/
+    background: #5247A7;
     color: white;
     border: none;
     border-bottom: solid 4px #222;
@@ -57,7 +59,7 @@ button {
 }
 
 button:hover {
-    background: #4c2827;
+    background: #FF8C00;
     border-bottom-color: #111;
 }
 
@@ -66,12 +68,12 @@ button:active {
     top: 1px;
 }
 
-totalTip {
+#totalTip {
     font-size: 50px;
     margin-top: 40px;
 }
 
-#totalTip::before {
+#totalTip:before {
     content: "Tip Amount";
     font-size: 14px;
     font-weight: bold;
@@ -80,5 +82,22 @@ totalTip {
 }
 
 #totalTip sup {
-
+    font-size: 24px;
+    top: -18px;
 }
+
+#totalTip small {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/**/
