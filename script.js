@@ -28,12 +28,17 @@ if(numPeople === "" || numPeople <= 1) {
 // Do some math!
 var total = (billAmount * serviceQuality) / numPeople;
 total = Math.round(total * 100) / 100;
-window.alert(total);
+total = total.toFixed(2);
+
+
+
+    // Display the tip!
+    document.getElementById("totalTip").style.display = "block";
 
 }
 // Hide tip amount on load
 document.getElementById("totalTip").style.display = "none";
-document.getElementById("each").style.display = "none";
+document.getElementById("each").style.display = "block";
 
 
 // clicking the button calls our custom function
