@@ -43,7 +43,7 @@ document.getElementById("each").style.display = "block";
 
 // clicking the button calls our custom function
 document.getElementById("calculate").onclick = function() { calculateTip() };
-
+document.getElementById("tip").innerHTML = total;
 
 
 
