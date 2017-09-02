@@ -6,7 +6,7 @@ function calculateTip() {
 // store the data of the input
 var billAmount = document.getElementById("billAmount").value;
 var serviceQuality = document.getElementById("serviceQuality").value;
-var numPeople = document.getElementById("numPeople").value;
+var numPeople = document.getElementById("totalPeople").value;
 
 // quick validation
 if(billAmount === "" || serviceQuality == 0) {
@@ -32,18 +32,19 @@ total = total.toFixed(2);
 
 
 
-    // Display the tip!
-    document.getElementById("totalTip").style.display = "block";
+// Display the tip!
+document.getElementById("totalTip").style.display = "block";
+document.getElementById("tip").innerHTML = total;
 
 }
+
+
 // Hide tip amount on load
 document.getElementById("totalTip").style.display = "none";
 document.getElementById("each").style.display = "block";
 
-
 // clicking the button calls our custom function
-document.getElementById("calculate").onclick = function() { calculateTip() };
-document.getElementById("tip").innerHTML = total;
+document.getElementById("calculate").onclick = function() { calculateTip(); };
 
 
 
